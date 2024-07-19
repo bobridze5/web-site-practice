@@ -1,0 +1,108 @@
+:root {
+  --main-theme: #747fff;
+  --border-img: #bababaa2;
+  --card-background: #faf4ffe3;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --hd-dark: #4003a3d7;
+  --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#nav {
+  border-bottom: 3px solid rgb(44, 42, 42);
+}
+
+.phone_header_main {
+  margin-right: 15px;
+  align-items: center;
+}
+
+.phone_header_main > a {
+  text-decoration: none;
+}
+
+.main_footer {
+  background-color: var(--main-theme);
+}
+
+.main_footer .container {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.main-info .container {
+  padding-top: 60px;
+}
+
+.main-info .title-contact {
+  margin-bottom: 30px;
+}
+
+.main-info .row {
+  margin-bottom: 50px;
+}
+
+.headline-text {
+  font-weight: 400px;
+  color: var(--bs-dark);
+  text-align: left;
+}
+
+.info-card {
+  padding-top: 22px;
+}
+
+.info-card .name {
+  text-align: left;
+  font-weight: 500;
+  font-size: 18pt;
+}
+
+.info-card .short-info {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.info-card .contact-info-person {
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.headline-text-into-card {
+  font-size: 18pt;
+  font-weight: 600;
+  color: var(--hd-dark);
+}

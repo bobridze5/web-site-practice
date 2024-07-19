@@ -1,0 +1,40 @@
+:root {
+  --main-theme: #747fff;
+  --border-img: #bababaa2;
+  --card-background: #faf4ffe3;
+}
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#nav {
+  border-bottom: 3px solid rgb(44, 42, 42);
+}
+
+.phone_header_main {
+  margin-right: 15px;
+  align-items: center;
+}
+
+.phone_header_main > a {
+  text-decoration: none;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.main_footer {
+  background-color: var(--main-theme);
+}
+
+.main_footer .container {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 80px;
+}

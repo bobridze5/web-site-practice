@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Летняя практика</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Этот сайт об ..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="utils\styles\index.css" />
+  </head>
+  <body>
+    <header id="nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-xl">
+          <a class="navbar-brand" href="index.html">Атланта</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/company.html">Компания</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Страны
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pages/countries.html">Египет</a></li>
+                  <li><a class="dropdown-item" href="./pages/countries.html">Россия</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="./pages/countries.html">Другие</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Автобусные туры
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Анапа</a></li>
+                  <li><a class="dropdown-item" href="#">Геленджик</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Другие</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/search_page.html">Поиск туров</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/review.html">Отзывы</a>
+              </li>
+            </ul>
+            <div class="phone_header_main"><a href="#">+79501043760</a></div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Отдых для всей семьи"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main_content">
+        <div
+          id="carouselCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carousel/sunset_ocean.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5>Волшебство заката на пляже                </h5>
+                <p>Насладитесь незабываемыми закатами и мягким песком под ногами. С нами вы откроете лучшие пляжи мира, где каждый закат станет произведением искусства.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel/mountain.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5>Горные приключения</h5>
+                <p>Для любителей активного отдыха мы предлагаем уникальные горные туры. Поднимайтесь ввысь и наслаждайтесь захватывающими видами и чистым горным воздухом.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel/beach.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5>Расслабляющий отдых на пляже</h5>
+                <p>Окунитесь в атмосферу полного спокойствия и безмятежности на наших лучших пляжных курортах. Насладитесь мягким шепотом волн, тёплыми солнечными лучами и комфортом шезлонгов, погружаясь в настоящий пассивный отдых.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel/sunset.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5>Туристические тропы в горах</h5>
+                <p>Исследуйте величественные горные массивы по живописным туристическим тропам. Мы предлагаем маршруты для всех уровней подготовки, чтобы каждый мог насладиться красотой природы и захватывающими дух видами.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel/bisedka.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-block">
+                <h5>Тропический рай на пляже</h5>
+                <p>Представьте себе пальмы, бирюзовую воду и белоснежный песок. Наши пляжные туры подарят вам ощущение настоящего тропического рая, где можно полностью расслабиться и забыть о суете.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <article class="article_headline"><strong>Подбор тура</strong></article>
+        <div id="search-bar-main" class="container">
+          <div class="row">
+            <div class="col">
+              <div class="form-point">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Москва</option>
+                    <option value="1">Сочи</option>
+                    <option value="2">Краснодар</option>
+                    <option value="3">Ангарск</option>
+                  </select>
+                  <label for="floatingSelect">Город вылета:</label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-point">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Россия</option>
+                    <option value="1">Турция</option>
+                    <option value="2">Китай</option>
+                    <option value="3">Казахстан</option>
+                  </select>
+                  <label for="floatingSelect">Страна:</label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-point">
+                <div class="form-floating">
+                  <input id="date_picker" class="form-control" type="date" />
+                  <label for="floatingSelect">Дата начала:</label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-point">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="4">5</option>
+                    <option value="5">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
+                    <option value="8">9</option>
+                    <option value="9">10</option>
+                  </select>
+                  <label for="floatingSelect">Ночей:</label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-point">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                  </select>
+                  <label for="floatingSelect">Туристы:</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="search_button_on_bar">
+            <button type="submit" class="btn btn-primary mb-2">Найти</button>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <article class="article_headline"><strong>Лучшие предложения</strong></article>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="images/cards/island.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Сейшельские острова: райский уголок</h5>
+                  <p class="card-text">
+                    Насладитесь уединением и красотой природы на Сейшельских островах. Бирюзовые воды, белоснежный песок и величественные гранитные скалы создают идеальные условия для отдыха и релаксации.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/cards/grece.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Древний Рим: путешествие во времени</h5>
+                  <p class="card-text">
+                    Откройте для себя величие Древнего Рима. Прогуляйтесь среди руин Колизея и Форума, окунитесь в атмосферу древней цивилизации и почувствуйте дыхание истории.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/cards/japan.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Восхождение на Фудзи: Японские высоты</h5>
+                  <p class="card-text">
+                    Испытайте духовное восхождение на священную гору Фудзи. Завораживающие виды и уникальная культура ждут вас в сердце Японии.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/cards/lake.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Альпийские озера: природа в лучшем виде</h5>
+                  <p class="card-text">
+                    Откройте для себя кристально чистые озера в окружении величественных Альп. Насладитесь прогулками на лодках и потрясающими пейзажами.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/cards/mount.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Мачу-Пикчу: потерянный город инков</h5>
+                  <p class="card-text">
+                    Погрузитесь в таинственную атмосферу Мачу-Пикчу. Узнайте о великой цивилизации инков и насладитесь панорамными видами Андских гор.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/cards/Paris.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Париж: город света и романтики</h5>
+                  <p class="card-text">
+                    Ощутите магию Парижа, прогуливаясь по его улицам. Эйфелева башня, Лувр и Монмартр – только часть того, что ждет вас в этом удивительном городе.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Best_Salles">
+        <div class="container">
+          <article class="article_headline"><strong>Акции</strong></article>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="/images/cards/shares/first.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Скидка 50% на "All Inclusive" в Дубае</h5>
+                <p class="card-text">Получите невероятные скидки на проживание в роскошном отеле Centara Mirage Beach Resort Dubai. Насладитесь пятизвездочным сервисом и живописными видами на Персидский залив.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/cards/shares/second.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">VIP-акция от Tez Tour: Лето 2024</h5>
+                <p class="card-text">Присоединяйтесь к нашей эксклюзивной VIP-акции и получите незабываемые впечатления этим летом. Особые условия и привилегии для наших лучших клиентов!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/cards/shares/third.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Анталья'24: Групповой трансфер под регулярные рейсы</h5>
+                <p class="card-text">Планируйте свой отпуск заранее и воспользуйтесь нашим предложением на групповой трансфер в Анталью. Удобные рейсы и комфортабельный трансфер гарантируют приятное начало вашего отдыха.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="container" id="description">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="list-field">
+                <div class="img-box">
+                  <img src="images/icons/support.png" alt="..."/>
+                </div>
+                <div class="right-text">
+                  <div class="list-title">Поддержка</div>
+                  Ответим на ваши вопросы по телефону, e-mail и в мессенджерах
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="list-field">
+                <div class="img-box">
+                  <img src="images/icons/hand.png" alt="..."/>
+                </div>
+                <div class="right-text">
+                  <div class="list-title">Качество и надежность</div>
+                  За 25 лет нашей работы мы отправили на отдых более 9 млн. туристов
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="list-field">
+                <div class="img-box">
+                  <img src="images/icons/payment.png" alt="..."/>
+                </div>
+                <div class="right-text">
+                  <div class="list-title">Гибкая оплата</div>
+                  Вы сами выбираете подходящий способ оплаты из множества вариантов, включая бесплатную рассрочку и кредит
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="list-field">
+                <div class="img-box">
+                  <img src="images/icons/pig.png" alt="..."/>
+                </div>
+                <div class="right-text">
+                  <div class="list-title">Выгодные цены</div>
+                  Бронирование любых тур. услуг по выгодным ценам
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="list-field">
+                <div class="img-box">
+                  <img src="images/icons/key.png" alt="..."/>
+                </div>
+                <div class="right-text">
+                  <div class="list-title">Отели и перелеты по всему миру</div>
+                  Более 520 000 отелей во всех странах мира.
+                  В любой сезон вы найдете то, что подходит именно вам
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="list-field">
+                <div class="img-box">
+                  <img src="images/icons/slider.png" alt="..."/>
+                </div>
+                <div class="right-text">
+                  <div class="list-title">Гибкий поиск и умные фильтры</div>
+                  Возможность подобрать отдых максимально отвечающий вашим предпочтениям
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <div class="container">
+      <footer class="bd-footer py-5 mt-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>О компании</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Отзывы</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Новости</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Памятка</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">О нас</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Контакты</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">+7 950-104-37-60</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">+7 950-104-33-76</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">atlanta2@gmail.com</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">atlanta@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Партнерам</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Партнерская программа</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Подпишитесь на рассылку</h5>
+              <p>Успевайте узнавать о новых акциях быстрее всех</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="example@gmail.com"
+                />
+                <button class="btn btn-primary" type="button">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        © 2024 Atlanta Company, Inc. Все права защищены.
+        <br><b>*Проект был создан в учебных целях</b></br>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

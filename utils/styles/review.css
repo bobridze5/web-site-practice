@@ -1,0 +1,140 @@
+:root {
+  --main-theme: #747fff;
+  --border-img: #bababaa2;
+  --card-background: #faf4ffe3;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#nav {
+  border-bottom: 3px solid rgb(44, 42, 42);
+}
+
+.phone_header_main {
+  margin-right: 15px;
+  align-items: center;
+}
+
+.phone_header_main > a {
+  text-decoration: none;
+}
+
+.container {
+  margin-bottom: 100px;
+}
+
+.main_footer {
+  background-color: var(--main-theme);
+}
+
+.main_footer .container {
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.review {
+  background-color: var(--main-theme);
+}
+
+.main-theme {
+  color: var(--main-theme);
+}
+
+.main-theme-btn {
+  background-color: var(--main-theme);
+  border-color: var(--main-theme);
+}
+
+.main-theme-btn:hover {
+  background-color: #646fd4;
+  border-color: #646fd4;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.star-rating {
+  font-size: 1.5rem;
+  direction: rtl;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.star-rating input[type='radio'] {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating input[type='radio']:checked ~ label {
+  color: var(--main-theme);
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: var(--main-theme);
+}
+
+.star-rating input[type='radio']:checked ~ label:hover,
+.star-rating input[type='radio']:checked ~ label:hover ~ label {
+  color: #646fd4;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--main-theme);
+  border-radius: 50%;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlighted {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}

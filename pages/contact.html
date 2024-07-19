@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Тестовый сайт</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Этот сайт об ..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="..\utils\styles\contact.css" />
+  </head>
+  <body>
+    <header id="nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-xl">
+          <a class="navbar-brand" href="../index.html">Атланта</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/company.html">Компания</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Страны
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./countries.html">Египет</a></li>
+                  <li><a class="dropdown-item" href="./countries.html">Россия</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="./countries.html">Другие</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Автобусные туры
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Анапа</a></li>
+                  <li><a class="dropdown-item" href="#">Геленджик</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Другие</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./search_page.html">Поиск туров</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./review.html">Отзывы</a>
+              </li>
+            </ul>
+            <div class="phone_header_main"><a href="#">+79501043760</a></div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Отдых для всей семьи"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="main-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="title-contact">
+                            <h1><b>Контакты</b></h1>
+                        </div>
+                        <div class="div-info">
+                            <p><strong>Адрес</strong>: Ярославская область, Углич, Успенская площадь, 1А</p>
+                            <p>
+                                График работы: 
+                                <br> Пн — Пт: <strong>10:00 — 19:00</strong>
+                                <br> Суббота:<strong>11:00 — 18:00</strong> 
+                                <br> Воскресенье: <strong> выходной </strong>
+                            </p>
+                            <p>
+                                <strong>Телефоны для связи: </strong>   
+                                <br>+7 (313) 214-05-86
+                                <br>+7 (313) 200-05-00
+                                <br>моб (What's app) <a href="#" class="text-primary text-decoration-none fw-bold"> +7 855 063 78 95 </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div style="position:relative; overflow:hidden;" id="map">
+                            <a href="https://yandex.ru/maps/org/turfirma_atlanta/1038890170/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Турфирма Атланта</a>
+                            <a href="https://yandex.ru/maps/10840/uglich/category/tour_operator/184106430/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Туроператор в Угличе</a>
+                            <a href="https://yandex.ru/maps/10840/uglich/category/boat_tours/155558188584/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Водные прогулки в Угличе</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=38.317666%2C57.525876&mode=search&oid=1038890170&ol=biz&sctx=ZAAAAAgBEAAaKAoSCfC%2FlezY%2BFlAEXKo34WtRUpAEhIJ%2BWcG8YEd1z8RRzgteNFXwD8iBgABAgMEBSgKOABA2FRIAGoCcnWdAc3MTD2gAQCoAQC9AdDqMADCAQW66bDvA4ICJ9CQ0YLQu9Cw0L3RgtCwINGC0YPRgNCw0LPQtdC90YLRgdGC0LLQvooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=38.317666%2C57.525876&sspn=0.003356%2C0.001047&text=%D0%90%D1%82%D0%BB%D0%B0%D0%BD%D1%82%D0%B0%20%D1%82%D1%83%D1%80%D0%B0%D0%B3%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE&z=18.75" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left">
+                    <div class="headline-text">
+                        <h2><b>Как добраться</b></h2>
+                    </div>
+                    <p>
+                      К нашему офису, расположенному на четвертом этаже бизнес центра, можно добраться через главный вход здания и затем подняться на четвертый этаж до офиса 403.
+                    </p>
+                    <p>
+                      Если вы планируете приехать на автомобиле, мы предоставляем бесплатные парковочные места для вашего удобства. Для использования парковки просим связаться с сотрудником компании "Атланта" по телефону <a href="#" class="text-primary text-decoration-none fw-bold">+7 (343) 214-55-86</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="headline-text">
+                    <h2><b>Контакты менеджеров</b></h2>
+                </div>
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Нестерова Софья
+                            </div>
+                            <div class="short-info">
+                                Заместитель директора по работе с клиентами
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                                Новикова Алия
+                            </div>
+                            <div class="short-info">
+                                Менеджер по туризму
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta40@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Матвеева Евангелина
+                            </div>
+                            <div class="short-info">
+                                Менеджер по туризму
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Грачева Алиса
+                            </div>
+                            <div class="short-info">
+                                Руководитель отдела корпоративного обслуживания
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Никитина Ксения
+                            </div>
+                            <div class="short-info">
+                                Менеджер по туризму
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headline-text-into-card">
+                    Визовый отдел
+                </div>
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Шишкина Агата
+                            </div>
+                            <div class="short-info">
+                                Менеджер
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Попова Анна
+                            </div>
+                            <div class="short-info">
+                                Менеджер
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headline-text-into-card">
+                    Отдел бронирования и продажи авиабилетов
+                </div>
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Суворова Полина
+                            </div>
+                            <div class="short-info">
+                                Авиакассир
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Титова Анастасия
+                            </div>
+                            <div class="short-info">
+                                Авиакассир
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headline-text-into-card">
+                    Администраторы
+                </div>
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Соловьева Фатима
+                            </div>
+                            <div class="short-info">
+                                Офис-менеджер
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="info-card">
+                            <div class="name">
+                              Воронова Светлана
+                            </div>
+                            <div class="short-info">
+                                Офис-менеджер
+                            </div>
+                            <div class="contact-info-person">
+                                E-mail: <a href="#" class="text-primary text-decoration-none fw-bold">atlnta1@mail-tour.ru</a>
+                                <br>Телефон: <a href="#" class="text-primary text-decoration-none fw-bold"> +7 (343) 134-17-66 доб. 720</a>
+                                <br>Моб. телефон: <a href="#" class="text-primary text-decoration-none fw-bold">+7 (855) 123-67-44</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main_footer">
+      <div class="container">
+      <footer class="bd-footer py-5 mt-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>О компании</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Отзывы</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Новости</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Памятка</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">О нас</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Контакты</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">+7 950-104-37-60</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">+7 950-104-33-76</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">atlanta2@gmail.com</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">atlanta@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Партнерам</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Партнерская программа</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Подпишитесь на рассылку</h5>
+              <p>Успевайте узнавать о новых акциях быстрее всех</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="example@gmail.com"
+                />
+                <button class="btn btn-primary" type="button">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        © 2024 Atlanta Company, Inc. Все права защищены.
+        <br><b>*Проект был создан в учебных целях</b></br>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

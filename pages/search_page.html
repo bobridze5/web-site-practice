@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Тестовый сайт</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Этот сайт об ..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="..\utils\styles\search_page.css" />
+  </head>
+  <body>
+    <header id="nav">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-xl">
+          <a class="navbar-brand" href="../index.html">Атланта</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./company.html">Компания</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Страны
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./countries.html">Египет</a></li>
+                  <li><a class="dropdown-item" href="./countries.html">Россия</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="./countries.html">Другие</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Автобусные туры
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Анапа</a></li>
+                  <li><a class="dropdown-item" href="#">Геленджик</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Другие</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Поиск туров</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./review.html">Отзывы</a>
+              </li>
+            </ul>
+            <div class="phone_header_main"><a href="#">+79501043760</a></div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Отдых для всей семьи"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="search-bar">
+            <div class="container">
+            <div id="search-bar-main" class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="form-point">
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        id="floatingSelect"
+                        aria-label="Floating label select example"
+                      >
+                        <option selected>Турция</option>
+                        <option value="1">Россия</option>
+                        <option value="2">Китай</option>
+                        <option value="3">Казахстан</option>
+                      </select>
+                      <label for="floatingSelect">Страна:</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-point">
+                    <div class="form-floating">
+                      <input id="date_picker" class="form-control" type="date"/>
+                      <label for="floatingSelect">Дата начала:</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-point">
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        id="floatingSelect"
+                        aria-label="Floating label select example"
+                      >
+                        <option selected>7</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                      <label for="floatingSelect">Ночей:</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-point">
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        id="floatingSelect"
+                        aria-label="Floating label select example"
+                      >
+                        <option selected>1</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                      </select>
+                      <label for="floatingSelect">Туристы:</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary">Искать туры</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <section class="main-catalog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="filter-side">
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Класс отеля
+                                </div>
+                                <div class="filter-block-radio-buttons">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+                                        <label class="form-check-label" for="defaultCheck1">
+                                          Любой
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                          <i class="star"></i>
+                                          <i class="star"></i>
+                                          <i class="star"></i>
+                                          <i class="star"></i>
+                                          <i class="star"></i>
+                                          5 звёзд 
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                          <i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i>
+                                          4 звезды
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                          <i class="star"></i><i class="star"></i><i class="star"></i>
+                                          3 звезды
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                        <label class="form-check-label" for="defaultCheck5">
+                                          <i class="star"></i><i class="star"></i>
+                                          1 - 2 звезды
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                        <label class="form-check-label" for="defaultCheck6">
+                                          Без звёзд
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Питание
+                                </div>
+                                <div class="filter-block-radio-buttons">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck11" checked>
+                                        <label class="form-check-label" for="defaultCheck11">
+                                          Любое
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                        <label class="form-check-label" for="defaultCheck12">
+                                            UAI - Ультра все включено
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                                        <label class="form-check-label" for="defaultCheck13">
+                                            AI - Всё включено
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                                        <label class="form-check-label" for="defaultCheck14">
+                                            AI(noAlc) - Всё включено (без алкоголя)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                                        <label class="form-check-label" for="defaultCheck15">
+                                            BB - Завтрак
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                                        <label class="form-check-label" for="defaultCheck16">
+                                            LHB - Завтрак + обед
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                                        <label class="form-check-label" for="defaultCheck17">
+                                            FB - Завтрак, обед, ужин
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                                        <label class="form-check-label" for="defaultCheck18">
+                                            HB - Завтрак + ужин
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                                        <label class="form-check-label" for="defaultCheck19">
+                                            RO - Без питания
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Бюджет, ₽
+                                </div>
+                                <div class="form-container">
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="numberInputFrom" placeholder="от 119 680 ₽" min="0">
+                                      </div>
+                                    <span class="dash">-</span>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="numberInputTo" placeholder="до 9 726 737 ₽" min="0">
+                                    </div>
+                                </div>
+                                <div class="row row-cols-2">
+                                    <div class="col">
+                                        <div class="value-budget">
+                                            до 150 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="value-budget">
+                                            до 300 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="value-budget">
+                                            до 450 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="value-budget">
+                                            до 600 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="value-budget">
+                                            до 700 000 ₽
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="value-budget">
+                                            до 900 000 ₽
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Тип отдыха
+                                </div>
+                                <div class="filter-block-radio-buttons">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios" id="r1" value="option1" checked>
+                                        <label class="form-check-label" for="r1">
+                                          Любой
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios" id="r2" value="option2">
+                                        <label class="form-check-label" for="r2">
+                                          Пляжный
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios" id="r3" value="option3">
+                                        <label class="form-check-label" for="r3">
+                                          Городской
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios" id="r4" value="option4">
+                                        <label class="form-check-label" for="r4">
+                                          Оздоровительный
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios" id="r5" value="option5">
+                                        <label class="form-check-label" for="r5">
+                                          Загородный
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Линия пляжа
+                                </div>
+                                <div class="filter-block-radio-buttons">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="c1" checked>
+                                        <label class="form-check-label" for="c1">
+                                          Любая
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="c2">
+                                        <label class="form-check-label" for="c2">
+                                        1-я линия: 0—200 метров
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="c3">
+                                        <label class="form-check-label" for="c3">
+                                        2-я линия: 201—500 метров
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="c4">
+                                        <label class="form-check-label" for="c4">
+                                        3-я линия: 501—800 метров
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Тип пляжа
+                                </div>
+                                <div class="filter-block-radio-buttons">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cс1" checked>
+                                        <label class="form-check-label" for="cс1">
+                                            Любой
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cс2">
+                                        <label class="form-check-label" for="cс2">
+                                            Песчаный
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cс3">
+                                        <label class="form-check-label" for="cс3">
+                                            Галечный
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cс4">
+                                        <label class="form-check-label" for="cс4">
+                                            Песчано-галечный
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cс5">
+                                        <label class="form-check-label" for="cс5">
+                                            Собственный пляж отеля
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cс6">
+                                        <label class="form-check-label" for="cс6">
+                                            Близко к центру
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block">
+                                <div class="filter-block-title">
+                                    Оценка по отзывам
+                                </div>
+                                <div class="filter-block-radio-buttons">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios_review" id="r11" value="option1" checked>
+                                        <label class="form-check-label" for="r11">
+                                          Все оценки
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios_review" id="r22" value="option2">
+                                        <label class="form-check-label" for="r22">
+                                          Превосходно и выше
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios_review" id="r33" value="option3">
+                                        <label class="form-check-label" for="r33">
+                                        Очень хорошо и выше
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Radios_review" id="r44" value="option4">
+                                        <label class="form-check-label" for="r44">
+                                        Хорошо и выше
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="list">
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.8</div>
+                                      <div class="review-count">
+                                        <a href="#" >492 отзыва</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2017</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Dobedan World Palace</a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" >Турция  Кемер: Кириш</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 229 000 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel-sunrise.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.9</div>
+                                      <div class="review-count">
+                                        <a href="#" >1048 отзывов</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2024</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Sunrise Queen Resort Hotel </a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" >Турция, Сиде: Кумкой</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 181 248 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel-inkem.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.5</div>
+                                      <div class="review-count">
+                                        <a href="#" >119 отзывов</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2016</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Incekum West Hotel</a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" > Турция, Аланья</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 164 897 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel-side-star-elegance.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.9</div>
+                                      <div class="review-count">
+                                        <a href="#" >29 отзыва</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2015</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Side Star Elegance</a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" >Турция  Кемер: Кириш</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 229 000 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel-palmers.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.8</div>
+                                      <div class="review-count">
+                                        <a href="#" >68 отзывов</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2019</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Palmeras Beach Hotel  </a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" >Турция, Аланья</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 162 985 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel-crystal.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.7</div>
+                                      <div class="review-count">
+                                        <a href="#" >28 отзывов</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2023</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Crystal Prestige Elite </a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" > Турция, Кемер: Гейнюк</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 213 098 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="list-item">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="image-box-item">
+                                  <img src="/images/search-img/content/img-hotel-sailors.jpg" />
+                              </div>
+                              </div>
+                              <div class="col-5">
+                                <div class="info-box-item">
+                                  <div class="review">
+                                    <div class="card-review">
+                                      <div class="review-rating">4.9</div>
+                                      <div class="review-count">
+                                        <a href="#" >43 отзывов</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="item-rating">
+                                    <div class="rating">
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                      <i class="star"></i>
+                                    </div>
+                                    <div class="year">Год реновации: 2020</div>
+                                  </div>
+                                   <div class="title">
+                                    <a href="#" >Sailors Beach Club </a>
+                                  </div>
+                                   <div class="place">
+                                    <div class="icon">
+                                      <img src="/images/search-img/icons/placeholder.png"/>
+                                    </div>
+                                    <div class="location">
+                                      <a href="" >Турция  Кемер: Кириш</a></div>
+                                   </div>
+                                   <div class="service">
+                                    <div class="row row-cols-2">
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/vacations.png" alt="">
+                                        <span>1-я линия</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/sand.png" alt="">
+                                        <span>Песок</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/air-conditioner.png" alt="">
+                                        <span>Кондиционер</span>
+                                      </div>
+                                      <div class="col">
+                                        <img src="/images/search-img/icons/wifi.png" alt="">
+                                        <span>Wi-Fi</span>
+                                      </div>
+                                    </div>
+                                   </div>
+                              </div>
+                              </div>
+                              <div class="col-3"> 
+                                <div class="purchase-box-item">
+                                  <div class="wrapper">
+                                    <div class="price">
+                                      <a href="#">от 240 719 ₽</a>
+                                    </div>
+                                    <div class="date-from-to">с 25 августа на 7 ночей</div>
+                                    <div class="recieve-info">
+                                      <button type="button" class="btn btn-warning">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="nav-bottom">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </main>
+    <footer class="main_footer">
+      <div class="container">
+      <footer class="bd-footer py-5 mt-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>О компании</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Отзывы</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Новости</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Памятка</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">О нас</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Контакты</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">+7 950-104-37-60</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">+7 950-104-33-76</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">atlanta2@gmail.com</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">atlanta@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Партнерам</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Партнерская программа</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Подпишитесь на рассылку</h5>
+              <p>Успевайте узнавать о новых акциях быстрее всех</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="example@gmail.com"
+                />
+                <button class="btn btn-primary" type="button">Подписаться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        © 2024 Atlanta Company, Inc. Все права защищены.
+        <br><b>*Проект был создан в учебных целях</b></br>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
